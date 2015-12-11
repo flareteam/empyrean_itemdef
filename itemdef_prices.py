@@ -1,0 +1,35 @@
+#!/usr/bin/python
+
+from itemdef_itemtype import ItemType
+
+prices = []
+prices.insert(ItemType.MELEE_HEAD, 30)
+prices.insert(ItemType.RANGED_HEAD, 30)
+prices.insert(ItemType.MENT_HEAD, 30)
+prices.insert(ItemType.MELEE_CHEST, 75)
+prices.insert(ItemType.RANGED_CHEST, 75)
+prices.insert(ItemType.MENT_CHEST, 75)
+prices.insert(ItemType.MELEE_LEGS, 50)
+prices.insert(ItemType.RANGED_LEGS, 50)
+prices.insert(ItemType.MENT_LEGS, 50)
+prices.insert(ItemType.MELEE_FEET, 30)
+prices.insert(ItemType.RANGED_FEET, 30)
+prices.insert(ItemType.MENT_FEET, 30)
+prices.insert(ItemType.MELEE_HANDS, 25)
+prices.insert(ItemType.RANGED_HANDS, 25)
+prices.insert(ItemType.MENT_HANDS, 25)
+prices.insert(ItemType.MELEE_ARTIFACT, 50)
+prices.insert(ItemType.RANGED_ARTIFACT, 50)
+prices.insert(ItemType.MENT_ARTIFACT, 50)
+prices.insert(ItemType.MELEE_WEAPON, 100)
+prices.insert(ItemType.RANGED_WEAPON, 100)
+prices.insert(ItemType.MENT_WEAPON, 100)
+prices.insert(ItemType.SHIELD, 75)
+prices.insert(ItemType.FIRE_RING, 100)
+prices.insert(ItemType.ICE_RING, 100)
+prices.insert(ItemType.SHOCK_RING, 100)
+prices.insert(ItemType.DARK_RING, 100)
+prices.insert(ItemType.XP_RING, 100)
+prices.insert(ItemType.GOLD_RING, 100)
+prices.insert(ItemType.ITEM_RING, 100)
+
