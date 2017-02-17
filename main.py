@@ -92,6 +92,9 @@ def main():
                 sys.stdout.write(prefix_rings[item_subtier-1])
             elif (i == ItemType.SHIELD):
                 sys.stdout.write(prefix_shield[item_subtier-1])
+            elif (i >= ItemType.MELEE_ARTIFACT and i <= ItemType.MENT_ARTIFACT):
+                # artifacts also use ring prefixes
+                sys.stdout.write(prefix_rings[item_subtier-1])
             elif (item_class == 0):
                 sys.stdout.write(prefix_melee[item_subtier-1])
             elif (item_class == 1):
