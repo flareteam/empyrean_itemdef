@@ -146,11 +146,11 @@ def main():
             dmgmax = 30 + (20 * item_tier)
 
             if (i == ItemType.MELEE_WEAPON):
-                sys.stdout.write("dmg_melee=")
+                sys.stdout.write("dmg=melee,")
             elif (i == ItemType.RANGED_WEAPON):
-                sys.stdout.write("dmg_ranged=")
+                sys.stdout.write("dmg=ranged,")
             elif (i == ItemType.MENT_WEAPON):
-                sys.stdout.write("dmg_ment=")
+                sys.stdout.write("dmg=ment,")
             
             sys.stdout.write(str(dmgmin) + "," + str(dmgmax) + "\n")
 
