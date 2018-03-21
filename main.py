@@ -205,9 +205,9 @@ def main():
             bonus = 0
             bonus_tier = int(math.floor((level-bonus1[i][2])/4))
             if (i >= ItemType.MELEE_WEAPON and i <= ItemType.SHIELD):
-                bonus = bonus1[i][1] * item_subtier
+                bonus = (bonus1[i][1] * item_subtier) + bonus1[i][3]
             else:
-                bonus = bonus1[i][1] * (level-bonus1[i][2]-bonus_tier+1)
+                bonus = (bonus1[i][1] * (level-bonus1[i][2]-bonus_tier+1)) + bonus1[i][3]
 
             sys.stdout.write("bonus=" + bonus1[i][0] + "," + str(bonus) + "\n")
 
@@ -215,9 +215,9 @@ def main():
             bonus = 0
             bonus_tier = int(math.floor((level-bonus2[i][2])/4))
             if (i >= ItemType.MELEE_WEAPON and i <= ItemType.SHIELD):
-                bonus = bonus2[i][1] * item_subtier
+                bonus = (bonus2[i][1] * item_subtier) + bonus2[i][3]
             else:
-                bonus = bonus2[i][1] * (level-bonus2[i][2]-bonus_tier+1)
+                bonus = (bonus2[i][1] * (level-bonus2[i][2]-bonus_tier+1)) + bonus2[i][3]
 
             sys.stdout.write("bonus=" + bonus2[i][0] + "," + str(bonus) + "\n")
 
