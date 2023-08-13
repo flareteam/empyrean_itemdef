@@ -141,9 +141,10 @@ def main():
 
         ## Weapon Damage
         if (i >= ItemType.MELEE_WEAPON and i <= ItemType.MENT_WEAPON):
-            # 5 bonus per level = 20 base per item tier
-            dmgmin = 25 + (20 * item_tier)
-            dmgmax = 30 + (20 * item_tier)
+            # 3 bonus per level = 10 base per item tier
+            dmg_bonus_per_level = 3
+            dmgmin = 10 + (dmg_bonus_per_level * 4 * item_tier)
+            dmgmax = 10 + (dmg_bonus_per_level * 4 * item_tier)
 
             if (i == ItemType.MELEE_WEAPON):
                 sys.stdout.write("dmg=melee,")
