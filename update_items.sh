@@ -1,8 +1,21 @@
 #!/bin/bash
 
-SCRIPT_PATH="/home/justin/Projects/empyrean_itemdef/main.py"
-ITEM_PATH="/home/justin/Projects/flare-game/mods/empyrean_campaign/items/categories"
+SCRIPT_PATH="$(dirname "$0")/main.py"
+FLARE_GAME_PATH="$1"
 
+if [ ! -d "$FLARE_GAME_PATH" ]; then
+    echo "Error: Path does not exist."
+    exit 1
+fi
+
+ITEM_PATH="$FLARE_GAME_PATH/mods/empyrean_campaign/items/categories"
+
+if [ ! -d "$ITEM_PATH" ]; then
+    echo "Error: Path does appear to contain Flare Empyrean data."
+    exit 2
+fi
+
+python $SCRIPT_PATH  1  4 > "$ITEM_PATH/level_1.txt"
 python $SCRIPT_PATH  2  12 > "$ITEM_PATH/level_2.txt"
 python $SCRIPT_PATH  3  38 > "$ITEM_PATH/level_3.txt"
 python $SCRIPT_PATH  4  64 > "$ITEM_PATH/level_4.txt"
